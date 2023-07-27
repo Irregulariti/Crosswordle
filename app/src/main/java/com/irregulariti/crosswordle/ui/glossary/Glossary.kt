@@ -1,4 +1,4 @@
-package com.irregulariti.crosswordle.ui.levels
+package com.irregulariti.crosswordle.ui.glossary
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
@@ -9,6 +9,9 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import com.irregulariti.crosswordle.R
 import androidx.compose.foundation.Image
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.Face
+import androidx.compose.material.icons.filled.Search
 import androidx.compose.material3.Icon
 import androidx.compose.material3.Text
 import androidx.compose.ui.Alignment
@@ -18,7 +21,7 @@ import androidx.compose.ui.res.vectorResource
 import androidx.compose.ui.unit.dp
 
 @Composable
-fun Levels() {
+fun Glossary() {
 
     Column(
         modifier = Modifier
@@ -30,11 +33,11 @@ fun Levels() {
     ) {
 
         Icon(
-            imageVector = ImageVector.vectorResource(id = R.drawable.playv),
-            contentDescription = "levels",
+            imageVector = ImageVector.vectorResource(id = R.drawable.glossv),
+            contentDescription = "gloss",
             tint = Color(0xFF0F9D58)
         )
 
-        Text(text = "Play", color = Color.Black)
+        Text(text = "Glossary", color = Color.Black)
     }
 }
