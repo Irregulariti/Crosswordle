@@ -25,7 +25,7 @@ class MainActivity : ComponentActivity() {
         }
     }
 }
-
+// Андрей лох
 @Composable
 fun Greeting(name: String, modifier: Modifier = Modifier) {
     Text(
