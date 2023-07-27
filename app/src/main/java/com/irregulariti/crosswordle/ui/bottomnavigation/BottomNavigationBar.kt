@@ -17,32 +17,30 @@ fun BottomNavigationBar(navController: NavHostController) {
 
     BottomNavigation(
 
-        // set background color
+
         backgroundColor = Color(0xFF2B92C2)
     ) {
 
-        // observe the backstack
+
         val navBackStackEntry by navController.currentBackStackEntryAsState()
 
-        // observe current route to change the icon
-        // color,label color when navigated
+
         val currentRoute = navBackStackEntry?.destination?.route
 
-        // Bottom nav items we declared
+
         Constants.BottomNavItems.forEach { navItem ->
 
-            // Place the bottom nav items
+
             BottomNavigationItem(
 
-                // it currentRoute is equal then its selected route
+
                 selected = currentRoute == navItem.route,
 
-                // navigate on click
                 onClick = {
                     navController.navigate(navItem.route)
                 },
 
-                // Icon of navItem
+
                 icon = {
                     Icon(imageVector = getVectors(n = navItem.route), contentDescription = navItem.label)
                 },

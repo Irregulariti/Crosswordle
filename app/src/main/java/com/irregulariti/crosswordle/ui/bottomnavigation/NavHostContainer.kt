@@ -20,25 +20,24 @@ fun NavHostContainer(
     NavHost(
         navController = navController,
 
-        // set the start destination as home
         startDestination = "levels",
 
-        // Set the padding provided by scaffold
+
         modifier = Modifier.padding(paddingValues = padding),
 
         builder = {
 
-            // route : Home
+
             composable("gloss") {
                 Glossary()
             }
 
-            // route : search
+
             composable("levels") {
                 Levels()
             }
 
-            // route : profile
+
             composable("creator") {
                 Creator()
             }
