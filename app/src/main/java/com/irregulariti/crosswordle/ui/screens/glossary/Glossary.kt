@@ -1,4 +1,4 @@
-package com.irregulariti.crosswordle.ui.createCW
+package com.irregulariti.crosswordle.ui.screens.glossary
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
@@ -9,9 +9,8 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import com.irregulariti.crosswordle.R
 import androidx.compose.foundation.Image
-import androidx.compose.foundation.layout.padding
-import androidx.compose.foundation.layout.size
 import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.Face
 import androidx.compose.material.icons.filled.Search
 import androidx.compose.material3.Icon
 import androidx.compose.material3.Text
@@ -20,9 +19,10 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.vectorResource
 import androidx.compose.ui.unit.dp
+import com.irregulariti.crosswordle.ui.core.CreateCore
 
 @Composable
-fun Creator() {
+fun Glossary() {
 
     Column(
         modifier = Modifier
@@ -34,11 +34,11 @@ fun Creator() {
     ) {
 
         Icon(
-            imageVector = ImageVector.vectorResource(id = R.drawable.creatorv),
-            contentDescription = "creator",
+            imageVector = ImageVector.vectorResource(id = R.drawable.glossv),
+            contentDescription = "gloss",
             tint = Color(0xFF0F9D58)
         )
 
-        Text(text = "Creator", color = Color.Black)
+        Text(text = "Glossary", color = Color.Black)
     }
 }
