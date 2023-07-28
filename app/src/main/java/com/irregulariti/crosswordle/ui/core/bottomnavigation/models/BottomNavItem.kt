@@ -1,4 +1,4 @@
-package com.irregulariti.crosswordle.ui.bottomnavigation.models
+package com.irregulariti.crosswordle.ui.core.bottomnavigation.models
 
 import androidx.compose.ui.graphics.vector.ImageVector
 

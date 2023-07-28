@@ -1,8 +1,8 @@
-package com.irregulariti.crosswordle.ui.bottomnavigation.utils
+package com.irregulariti.crosswordle.ui.core.bottomnavigation.utils
 
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Info
-import com.irregulariti.crosswordle.ui.bottomnavigation.models.BottomNavItem
+import com.irregulariti.crosswordle.ui.core.bottomnavigation.models.BottomNavItem
 
 object Constants {
     val BottomNavItems = listOf(

@@ -1,4 +1,5 @@
-package com.irregulariti.crosswordle.ui.bottomnavigation
+package com.irregulariti.crosswordle.ui.core.bottomnavigation
+
 
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.padding
@@ -7,9 +8,10 @@ import androidx.compose.ui.Modifier
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
-import com.irregulariti.crosswordle.ui.createCW.Creator
-import com.irregulariti.crosswordle.ui.glossary.Glossary
-import com.irregulariti.crosswordle.ui.levels.Levels
+import com.irregulariti.crosswordle.ui.screens.createCW.Creator
+import com.irregulariti.crosswordle.ui.screens.glossary.Glossary
+import com.irregulariti.crosswordle.ui.screens.levels.Levels
+import com.irregulariti.crosswordle.ui.screens.profile.Profile
 
 @Composable
 fun NavHostContainer(
@@ -40,6 +42,10 @@ fun NavHostContainer(
 
             composable("creator") {
                 Creator()
+            }
+
+            composable("profile") {
+                Profile()
             }
         })
 
