@@ -1,11 +1,13 @@
 package com.irregulariti.crosswordle.ui.core
 
+import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.material.Scaffold
 import androidx.compose.material.Surface
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.unit.dp
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.rememberNavController
 import com.irregulariti.crosswordle.ui.core.bottomnavigation.BottomNavigationBar
@@ -19,14 +21,14 @@ fun CreateCore() {
     Surface(color = Color.White) {
 
         Scaffold(
-            topBar = { MainTopAppBar(navController = navController)},
+            topBar = { MainTopAppBar(navController = navController) },
 
-            bottomBar = {
-                BottomNavigationBar(navController = navController)
-            }, content = { padding ->
+            bottomBar = { BottomNavigationBar(navController = navController) },
 
-                NavHostContainer(navController = navController, padding = padding)
-            }
+            content = { padding ->
+                NavHostContainer(navController = navController, padding = PaddingValues(5.dp))
+            },
+            backgroundColor = Color.LightGray
         )
     }
 }
