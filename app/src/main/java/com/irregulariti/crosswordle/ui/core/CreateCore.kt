@@ -27,8 +27,7 @@ fun CreateCore() {
 
             content = { padding ->
                 NavHostContainer(navController = navController, padding = PaddingValues(5.dp))
-            },
-            backgroundColor = Color.LightGray
+            }
         )
     }
 }
