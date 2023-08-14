@@ -22,6 +22,7 @@ class MainActivity : ComponentActivity() {
         WindowCompat.setDecorFitsSystemWindows(window, false)
 
         setContent {
+            Generate()
             MyApplicationTheme {
                 Box(
                     Modifier
@@ -35,6 +36,3 @@ class MainActivity : ComponentActivity() {
         }
     }
 }
-
-
-
