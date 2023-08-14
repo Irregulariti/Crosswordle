@@ -10,22 +10,20 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import com.irregulariti.crosswordle.logic.Generate
 import com.irregulariti.crosswordle.ui.theme.MyApplicationTheme
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            MyApplicationTheme {
-                // A surface container using the 'background' color from the theme
-                Surface(modifier = Modifier.fillMaxSize(), color = MaterialTheme.colorScheme.background) {
-                    Greeting("Android")
-                }
-            }
+            Generate()
         }
     }
 }
+
 @Composable
+//компостная яма типа, гы
 fun Greeting(name: String, modifier: Modifier = Modifier) {
     Text(
             text = "Hello $name!",
